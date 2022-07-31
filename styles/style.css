@@ -1,0 +1,255 @@
+/*  google fonts  */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@0,500;1,500&display=swap');
+
+
+/* utilities */
+
+body{
+    font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+
+/* top banner style  */
+.container{
+    width: 1321px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.top-banner{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: black;
+    border-radius: 30px;
+    padding: 50px;
+}
+.banner-text{
+    color: white;
+   
+}
+.banner-title{
+    font-size: 70px;
+    font-weight: 700;
+}
+.link-btn{
+    width: 187px;
+    padding: 16px 25px;
+    margin: 15px;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+   
+}
+.banner-image img{
+    width: 100%;
+}
+
+/* upcoming matches and transfer section  */
+.transfer-matches{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    
+    
+}
+.upc-match{
+    
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+   padding: 40px ;
+   border-radius: 20px;
+}
+
+.transfers{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+
+}
+.transfer{
+    width:312px;
+    border-radius:10px ;
+    box-shadow: #E8E8E8;
+}
+.transfer .tran-img img{
+    margin-bottom: 20px;
+}
+
+.white-btn{
+    width: 174px;
+    padding: 17px 39px;
+    background-color: white;
+    border-radius: 7px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-left: 15px;
+    border: 1px solid black;
+}
+.marked-btn{
+    width: 174px;
+    padding: 17px 39px;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    border-radius: 7px;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 15px;
+    border: 1px solid black;
+}
+.tran-box{
+    width: 100px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+}
+span{
+    margin-left: 40px;
+}
+/* footer */
+footer{
+    width: 100%;
+    background-color: black;
+    height: 444px;
+   
+}
+.footer-sect{
+    padding: 100px;
+}
+footer h1{
+    text-align: center;
+    color: white;
+}
+hr{
+    border: 1px solid white;
+    width: 1000px
+    
+}
+.footer-options{
+    margin-left: 400px;
+    margin-top: 100px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+}
+/* social media  */
+.social span{
+    color: white;
+    font-weight: 700;
+}
+
+/*-------------
+ responsive
+-------------- */
+/* small device (smartphones) */
+@media only screen and (max-width:687px) {
+    .container{
+        width: 100%;
+        margin-left: 50px;
+    }
+    .top-banner, .transfer-matches, .transfers {
+        
+        
+        
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        
+    }
+    .banner-title{
+        font-size: 10vw;
+        padding: 20px;
+        
+    }
+    .upc-match{
+        background-color: #E8E8E8;
+    }
+    footer{
+        width: 100%;
+        margin-left: 50px;
+       
+    }
+    hr{
+        width: 100%;
+    }
+    .footer-options{
+        margin: 0 auto;
+    }
+    .footer-sect{
+        width: 100%;
+        
+    }
+    footer .footer-sect h1{
+        text-align: center;
+        
+    }
+    footer a{
+        display: block;
+        margin-bottom: 20px;
+    }       
+        
+}
+/* responsive for tab  */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+        margin-left: 70px;
+        margin-bottom: 80px;
+        margin-right: 100px;
+        
+      
+        
+    }
+    .top-banner{
+        width: 100%;
+        
+       
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .banner-image, .banner-text{
+        width: 100%;
+    }
+    .transfer-matches{
+        display: inline;
+    }
+    .upc-match{
+        width: 100%;
+        display: flex;
+        background-color: white;
+        
+        gap: 20px;
+       padding: 40px ;
+       border-radius: 20px;
+
+    }
+    .transfers{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer{
+        margin-left: 70px;
+        margin-right: 100px;
+    }
+    .footer-options{
+        margin: 0 auto;
+    }
+}
+/* website-2 */
+.ger-fra {
+    display: flex;
+
+}
